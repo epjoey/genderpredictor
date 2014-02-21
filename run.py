@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import csv
 from genderPredictor import genderPredictor
+import pprint
 
 gp = genderPredictor()
 gp.trainAndTest()
@@ -45,6 +46,6 @@ results['percentageCorrect'] = {
     'total': float(results['numCorrect']) / float(results['numAnalyzed'])
 }
 
-print results
-out = open( 'gender_predictions.json', 'w')
-out.write(str(results))
+#print json.loads(results)
+with open('output.txt', 'wt') as out:
+    pprint.pprint(results, stream=out)

@@ -1,0 +1,9 @@
+{'numAnalyzed': 23762,
+ 'numCorrect': 18185,
+ 'numFemaleAnalyzed': 14198,
+ 'numFemaleCorrect': 11579,
+ 'numMaleAnalyzed': 9564,
+ 'numMaleCorrect': 6606,
+ 'percentageCorrect': {'F': 0.81553739963375127,
+                       'M': 0.6907151819322459,
+                       'total': 0.76529753387761978}}
